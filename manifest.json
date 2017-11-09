@@ -10,7 +10,7 @@
    },
 
    "browser_action": {
-      "default_icon": "online.png",
+      "default_icon": "online_I.png",
       "default_title": "Internet Traffic Signal",
       "default_popup": "popup.html"
    },
