@@ -6,7 +6,7 @@ var HttpClient = function() {
     this.get = function(aUrl, aCallback) {
         var anHttpRequest = new XMLHttpRequest();
         anHttpRequest.onreadystatechange = function() {
-            if (anHttpRequest.readyState == 4)
+            if (anHttpRequest.readyState === 4)
                 aCallback(anHttpRequest.status);
         }
         anHttpRequest.open( "GET", aUrl, true );
@@ -19,19 +19,19 @@ window.setInterval(() => {
   //localStorage.setItem("current_status", JSON.stringify(condition));
 
   client.get('http://www.google.com', function(response) {
-    if (response == 200) {
+    if (response === 200) {
       flag = true;
     } else {
       flag = false;
     }
   });
-  if (condition == "offline") {
-    trueCondition = "offline";
+  if (condition === "offline") {
+    trueCondition = "offline_I";
   } else {
-    if (flag == true) {
-      trueCondition = "online";
+    if (flag === true) {
+      trueCondition = "online_I";
     } else {
-      trueCondition = "yellow";
+      trueCondition = "yellow_I";
     }
   }
   chrome.browserAction.setIcon({path: trueCondition + ".png"});
