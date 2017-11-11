@@ -26,12 +26,12 @@ window.setInterval(() => {
     }
   });
   if (condition === "offline") {
-    trueCondition = "offline_I";
+    trueCondition = "red";
   } else {
     if (flag === true) {
-      trueCondition = "online_I";
+      trueCondition = "green";
     } else {
-      trueCondition = "yellow_I";
+      trueCondition = "yellow";
     }
   }
   chrome.browserAction.setIcon({path: trueCondition + ".png"});

@@ -2,7 +2,7 @@
    "manifest_version": 2,
 
    "name": "Internet Traffic Signal",
-   "description": "This extension shows a red icon when devices are not connected to the Internet, a green icon when connected, and a yellow icon when access is limited.",
+   "description": "Useful in K-12, this extension shows green if the device is Internet-connected; red, if not; yellow for only a local connection.",
    "version": "2.0",
 
    "background": {
@@ -10,7 +10,7 @@
    },
 
    "browser_action": {
-      "default_icon": "online_I.png",
+      "default_icon": "green.png",
       "default_title": "Internet Traffic Signal",
       "default_popup": "popup.html"
    },
