@@ -3,7 +3,7 @@
 
    "name": "Internet Traffic Signal",
    "description": "Useful in K-12, this extension shows green if the device is Internet-connected; red, if not; yellow for only a local connection.",
-   "version": "2.0",
+   "version": "3.0",
 
    "background": {
       "scripts": [ "scripts/background.js" ]
@@ -16,6 +16,7 @@
    },
 
    "permissions": [
+    "storage",
     "http://www.google.com/",
     "https://www.google.com/"
     ]
