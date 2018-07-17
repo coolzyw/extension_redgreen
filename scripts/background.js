@@ -55,7 +55,7 @@ function addToLog(message) {
 var client = new HttpClient();
 var info = []
 
-chrome.storage.local.get(['log'], function(result) {
+chrome.storage.local.get(['log'], function() {
   if (typeof result.log === "undefined") {
     chrome.storage.local.set({'log': info});
   }
